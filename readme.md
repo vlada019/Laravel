@@ -1,4 +1,4 @@
-# Laravel
+# Super
 
 ## Installation:
 
@@ -13,7 +13,14 @@ define environment
 
 ## Project based on:
 
-* Laravel 5.6
+* Laravel 5.7
+
+## development hints:
+
+* primary keys should always be named as id
+* think twice about entity relations
+* pointers on how to design an entity schema and create proper entity attributes. for more info click [here](https://laravel.com/docs/5.7/migrations)
+* always use english for all sort of names [ types, variables, classes .. ]
 
 ## Standards and pointers:
 
