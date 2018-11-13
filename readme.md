@@ -21,6 +21,22 @@ define environment
 * think twice about entity relations
 * pointers on how to design an entity schema and create proper entity attributes. for more info click [here](https://laravel.com/docs/5.7/migrations)
 * always use english for all sort of names [ types, variables, classes .. ]
+* you can autocreate created_at and updated_at columns; check above link as well
+
+## base entities:
+
+* user -> id, name, email, email_verified_at, password, token, created_at, updated_at
+* role -> id, name, created_at, updated_at
+* actor
+* model
+* super
+* project
+* file
+
+
+- [] Complete the list according to user table analogy, add missing attributes as well as missing entities
+- [] Once above is checked we move to adding migration classes
+
 
 ## Standards and pointers:
 

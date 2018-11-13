@@ -19,8 +19,10 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->unsignedInteger('role_id'); //create a foreign key column to be able to reference later
             $table->rememberToken();
             $table->timestamps();
+            $table->foreign('role_id')->references('id')->on('role'); // add a reference to external table id | no cascade,why ;)?
         });
     }
 
