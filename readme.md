@@ -28,8 +28,8 @@ define environment
 * user -> id, name, email, email_verified_at, password, token, created_at, updated_at
 * role -> id, name, created_at, updated_at, current_year
 * actor -> id, name, gender, year_of_birth, height, weight, size, shoe_size, tel_number, university, black_list, email, spec_skill, role.name, project.date_of_shooting, other_projects, country, city, adress
-* model -> id, name, gender, year_of_birth, height, weight, size, shoe_size, tel_number, agency, country, city, black_list, role.name, email, project.name, project.date_of_shooting, spec_skill
-* extra -> id, name, gender, year_of_birth, height, weight, size, shoe_size, tel_number, agency, country, city, black_list, role.name, email, project.name, project.date_of_shooting, other_projects, most_used_extras, spec_skill
+* model -> id, name, gender, year_of_birth, height, weight, size, shoe_size, tel_number, agency, country, city, black_list, role.name, email, project.name, project.date_of_shooting, spec_skill, job
+* extra -> id, name, gender, year_of_birth, height, weight, size, shoe_size, tel_number, agency, country, city, black_list, role.name, email, project.name, project.date_of_shooting, other_projects, most_used_extras, spec_skill, job
 * kid -> id, name, gender, year_of_birth, tel_number, agency, country, city, black_list, role.name, email, project.name, project.date_of_shooting, other_projects, most_used_extras
 * project -> id, name, client, date_of_shooting, created_at, updated_at, finished_at
 * file -> idk this one, all i know is that every actor, extra, model and kid has to have a couple of pics and couple of videos and maybe pdf files or .ppt or .doc
