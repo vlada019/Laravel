@@ -37,8 +37,8 @@ define environment
 * session -> sessionId, expired
 
 
-[] Complete the list according to user table analogy, add missing attributes as well as missing entities
-[] Once above is checked we move to adding migration classes
+- [ ] Complete the list according to user table analogy, add missing attributes as well as missing entities
+- [ ] Once above is checked we move to adding migration classes
 
 
 ## Standards and pointers:
