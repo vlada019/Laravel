@@ -26,15 +26,15 @@ define environment
 ## base entities:
 
 * user -> id, name, email, verified, password, token, created, updated // loggedin users | used for application access
-* role -> id, name, created, updated // different levels of application access [ regular, anon, manager, admin, client .. ]
+* role -> id, name, created, updated // this entity can be exported to [.pdf, .jpg, . bmp... file ext.] with resticted access to atributes of one (employee), for example, as a user I want to send suggestion for particular role that is demanded from the client and when I select picks (ones that suites the demand) and I export them to .pdf only selected atributes should apear on exported file
 * client -> id, name, email, phone, address, logo[fileId], created, updated // actual client on the project // so you can filter projects per client
-* employee -> id, userType[ actor, model, kid, extra, whatever ], name, gender, birthYear, height, weight, size, shoeSize, phone, university, agency, country, city, specSkill, blackList, email, specSkill, country, city, address, job, mostUsedExtras // suggest better entity name that will cover all types of users in the databse ? | add more attributes ?
-* project -> id, name, clientId, shootingDate, finished, created, updated
+* employee -> id, userType[ actor, model, kid, extra, whatever ], name, gender, birthYear, height, weight, size, shoeSize, phone, university, agency, country, city, specSkill, blackList, email, origin, residence, address, job, mostUsedExtras // emplyee is just fine i sopose, the only term that cross my mind was 'archived' or 'one' like one from the whole archive of entities of that userType and its short and simple, again I sopose employee is the most sutable// just to make clear, specSkill can be a list of strings I mean one (employee) can have more special skills, this atribute is maybe the most important as the main or first or special criteria of searching the (one) employee for the right role that is like demand from particular client for particular project :)
+* project -> id, name, clientId, shootingDate, finished, created, updated // maybe project can also have userType[commercial, movie, serial, promo, musicVideo]
 * engagements -> projectId, userType, userId // userType = [ model, actor, extra .. ], userId -> [modelId, actorId ] // many to many, single table to keep track of project engagements for all types of users and all projects
 * file -> id, extension, mimeType, size, path
 * media -> userId, userType, fileId // many-to-many between files and users [ actor, model, kid .. ]
-* note -> id, name, done, employeeId, projectId // to which entity we related the note to ? employee or project ? remove the unnecessary one
-* session -> sessionId, expired
+* note -> id, name, done, employeeId, projectId // hmm, note should be related to project but the note contains spec info about one (employee) like, if one is available for shooting of spec. project, if one had shot any commercial in last 2 to 5 years and also the note can contain any specific demand from the client
+* session -> sessionId, expired // sopose this is like default entity? 
 
 
 - [ ] Complete the list according to user table analogy, add missing attributes as well as missing entities
