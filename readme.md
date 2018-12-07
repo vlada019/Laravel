@@ -33,7 +33,7 @@ define environment
 * engagements -> projectId, userType, userId // userType = [ model, actor, extra .. ], userId -> [modelId, actorId ] // many to many, single table to keep track of project engagements for all types of users and all projects
 * file -> id, extension, mimeType, size, path
 * media -> userId, userType, fileId // many-to-many between files and users [ actor, model, kid .. ]
-* note -> id, name, done, employeeId, projectId // hmm, note should be related to project but the note contains spec info about one (employee) like, if one is available for shooting of spec. project, if one had shot any commercial in last 2 to 5 years and also the note can contain any specific demand from the client
+* note -> id, name, done, projectId // hmm, note should be related to project but the note contains spec info about one (employee) like, if one is available for shooting of spec. project, if one had shot any commercial in last 2 to 5 years and also the note can contain any specific demand from the client
 * session -> sessionId, expired // sopose this is like default entity? 
 
 
